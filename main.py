@@ -31,7 +31,12 @@ df2 = pd.read_csv(r"C:\Users\Baski\Desktop\SeniorProject\H-M-SeniorProject\first
 print(df.isnull())
 df = df.fillna(0)
 
-print(df)
+print(article.isnull().sum())
+article = article.fillna('No Description')
+print(article.isnull().sum())
 
-df.to_csv('customer2.csv')
+
+article.to_csv(r'SeniorProject\article2.csv')
+
+df.to_csv('SeniorProject\customer2.csv')
 
